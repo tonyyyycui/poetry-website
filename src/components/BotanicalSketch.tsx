@@ -9,7 +9,7 @@ const BotanicalSketch = ({
   className = "",
   flip = false
 }: BotanicalSketchProps) => {
-  const baseClasses = `opacity-[0.12] ${flip ? "scale-x-[-1]" : ""} ${className}`;
+  const baseClasses = `opacity-[0.35] ${flip ? "scale-x-[-1]" : ""} ${className}`;
 
   if (variant === "leaf") {
     return (

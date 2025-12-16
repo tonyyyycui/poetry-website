@@ -6,93 +6,92 @@ import ClosingSection from "@/components/ClosingSection";
 
 const poems = [
   {
-    title: "Morning Light",
-    author: "Anonymous",
+    title: "A Soul Winter's Eve",
     lines: [
-      "The window holds",
-      "a square of sky—",
+      "I choose to open my eyelids to let in the light,",
+      "and observe the wilderness that sprawls past its undertow.",
+      "Barren treetops offer a view into the shrub depths that glow",
+      "endlessly, beyond what I can envision past my sight.",
       "",
-      "pale blue dissolving",
-      "into white,",
+      "A marbled windowsill rests snug against bruised elbows,",
+      "padded by the remnants of a devastating cough.",
+      "Forehead pressed against the icy pane as the mind runs off",
+      "with an image of pines buried deep in snow.",
       "",
-      "the day arriving",
-      "without ceremony,",
+      "Darkness engulfs the scene like a colony of ants scrambling for life.",
+      "Shadows form glyphs on the popcorn textured ceiling,",
+      "morphing left and right, in and out of a stuttered gasping,",
+      "flirting existence with the sunlit edge of a glimmering knife.",
       "",
-      "soft as breath",
-      "on cold glass."
+      "The silence of faint rustling awakens a dormant forebode of longing,",
+      "for soothing warmth curated from a fruitful season of autumn.",
+      "Eyelids close as a water lily's final petal floats to the icy earth's bottom,",
+      "laying to rest the world's lust for a new day's dawning."
     ]
   },
   {
-    title: "Small Hours",
-    author: "Anonymous",
+    title: "Tranquility",
     lines: [
-      "In the quiet before dawn",
-      "I find myself",
-      "collecting silences—",
+      "A cardinal flies by the clearing I'm in,",
+      "bringing me blissful joy from its chirping.",
+      "The scent of wood bark hangs crisply in the air,",
+      "drawing me into its tranquil and hazy fog.",
+      "Traffic noises hum and whir, honk and beep,",
+      "a constant reminder like a homeless shelter,",
+      "of the world that chugs along without me.",
       "",
-      "the space between",
-      "one heartbeat and the next,",
-      "",
-      "the pause before",
-      "the kettle sings."
+      "I long to spend eternity here,",
+      "where I can conceal my presence,",
+      "where nature won't push me into a puppet,",
+      "where I can live past existing.",
+      "The rustling of fallen leaves,",
+      "the faint laughter of playful children,",
+      "the flapping of a butterfly's delicate wings,",
+      "invite me into a lucid dream,",
+      "free from a chaotic world of disease."
     ]
   },
   {
-    title: "Garden Notes",
-    author: "Anonymous",
+    title: "a hint of reminiscence",
     lines: [
-      "The roses are remembering",
-      "how to open.",
+      "i still remember what it was like",
+      "to be in kindergarten.",
+      "sitting criss cross applesauce,",
+      "on a polka dot carpet.",
+      "patiently counting the seconds",
+      "until recess,",
+      "or the beloved snack time.",
+      "on the weekends,",
+      "i would be busy,",
+      "with chinese school, soccer practice, and Sunday church.",
+      "but after school,",
+      "when no one wanted to play,",
+      "there was a feeling of infinite time,",
+      "accompanied with boredom and silence.",
+      "everyday i wanted to be grown,",
+      "because adults treated me different,",
+      "and in that moment i didn't want that.",
+      "but i should have cherished that time,",
+      "that freedom, and that innocence.",
       "",
-      "Each petal",
-      "a decision made slowly,",
+      "i am no longer a child,",
+      "with real responsibilities and laboring tasks",
+      "like searching for a job,",
+      "building relationships,",
+      "and making time for sleep.",
+      "expectations are raised",
+      "and needs must be met.",
+      "there's never enough time in the day,",
+      "for me to ponder about myself.",
+      "life is harder now,",
+      "my emotions are more complex,",
+      "and i have a future to worry about.",
       "",
-      "the way we learn",
-      "to trust the light."
-    ]
-  },
-  {
-    title: "Letter to Myself",
-    author: "Anonymous",
-    lines: [
-      "Be gentle",
-      "with the hours.",
-      "",
-      "They are doing",
-      "their best to hold you—",
-      "",
-      "each one a small room",
-      "you are invited",
-      "to sit in."
-    ]
-  },
-  {
-    title: "After Rain",
-    author: "Anonymous",
-    lines: [
-      "The world returns",
-      "washed clean,",
-      "",
-      "each leaf holding",
-      "its own small sky,",
-      "",
-      "and I am learning",
-      "what it means",
-      "to begin again."
-    ]
-  },
-  {
-    title: "Evening",
-    author: "Anonymous",
-    lines: [
-      "The light is soft now,",
-      "forgiving.",
-      "",
-      "Even the shadows",
-      "have softened their edges,",
-      "",
-      "making room",
-      "for rest."
+      "i wish i could go back",
+      "to kindergarten one more time.",
+      "or maybe just tell my younger self",
+      "to stare into that carpet,",
+      "and don't look away."
     ]
   }
 ];
@@ -105,10 +104,10 @@ const Index = () => {
       
       {/* First poem - cream background */}
       <PastelSection color="cream" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto relative">
+        <div className="max-w-2xl mx-auto relative">
           <BotanicalSketch 
-            variant="sprig" 
-            className="absolute -right-16 top-0 w-20 text-foreground hidden md:block"
+            variant="branch" 
+            className="absolute -right-24 top-4 w-32 text-foreground hidden lg:block"
           />
           <Poem {...poems[0]} />
         </div>
@@ -118,10 +117,15 @@ const Index = () => {
 
       {/* Second poem - subtle blush */}
       <PastelSection color="blush" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto relative">
+        <div className="max-w-2xl mx-auto relative">
+          <BotanicalSketch 
+            variant="fern" 
+            className="absolute -left-16 top-12 w-14 text-foreground hidden lg:block"
+          />
           <BotanicalSketch 
             variant="flower" 
-            className="absolute -left-14 top-8 w-12 text-foreground hidden md:block"
+            className="absolute -right-20 bottom-1/4 w-12 text-foreground hidden lg:block"
+            flip
           />
           <Poem {...poems[1]} />
         </div>
@@ -131,53 +135,21 @@ const Index = () => {
 
       {/* Third poem - lavender whisper */}
       <PastelSection color="lavender" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto relative">
-          <BotanicalSketch 
-            variant="fern" 
-            className="absolute -right-12 bottom-0 w-10 text-foreground hidden md:block"
-          />
-          <Poem {...poems[2]} />
-        </div>
-      </PastelSection>
-
-      {/* Large breathing space */}
-      <SoftDivider variant="space" className="h-32 md:h-48" />
-
-      {/* Fourth poem - sage green */}
-      <PastelSection color="sage" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto relative">
+        <div className="max-w-2xl mx-auto relative">
           <BotanicalSketch 
             variant="leaf" 
-            className="absolute -left-14 top-1/4 w-14 text-foreground hidden md:block"
+            className="absolute -left-16 top-1/4 w-16 text-foreground hidden lg:block"
           />
-          <Poem {...poems[3]} />
-        </div>
-      </PastelSection>
-
-      <SoftDivider variant="line" />
-
-      {/* Fifth poem - soft sky */}
-      <PastelSection color="sky" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto relative">
           <BotanicalSketch 
-            variant="branch" 
-            className="absolute -top-6 -right-20 w-28 text-foreground hidden md:block"
+            variant="sprig" 
+            className="absolute -right-20 top-1/2 w-20 text-foreground hidden lg:block"
           />
-          <Poem {...poems[4]} />
-        </div>
-      </PastelSection>
-
-      <SoftDivider variant="dots" />
-
-      {/* Final poem - return to cream */}
-      <PastelSection color="cream" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto relative">
           <BotanicalSketch 
             variant="bud" 
-            className="absolute -left-10 bottom-4 w-8 text-foreground hidden md:block"
+            className="absolute -left-12 bottom-20 w-10 text-foreground hidden lg:block"
             flip
           />
-          <Poem {...poems[5]} />
+          <Poem {...poems[2]} />
         </div>
       </PastelSection>
 
