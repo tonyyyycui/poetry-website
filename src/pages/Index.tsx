@@ -1,6 +1,6 @@
 import Poem from "@/components/Poem";
 import SoftDivider from "@/components/SoftDivider";
-import DecorativeAccent from "@/components/DecorativeAccent";
+import BotanicalSketch from "@/components/BotanicalSketch";
 import PastelSection from "@/components/PastelSection";
 import ClosingSection from "@/components/ClosingSection";
 
@@ -105,7 +105,11 @@ const Index = () => {
       
       {/* First poem - cream background */}
       <PastelSection color="cream" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-lg mx-auto relative">
+          <BotanicalSketch 
+            variant="sprig" 
+            className="absolute -right-16 top-0 w-20 text-foreground hidden md:block"
+          />
           <Poem {...poems[0]} />
         </div>
       </PastelSection>
@@ -115,9 +119,9 @@ const Index = () => {
       {/* Second poem - subtle blush */}
       <PastelSection color="blush" className="px-6 md:px-8 py-16 md:py-24">
         <div className="max-w-lg mx-auto relative">
-          <DecorativeAccent 
-            variant="wave" 
-            className="absolute -top-8 right-0 w-24 text-foreground"
+          <BotanicalSketch 
+            variant="flower" 
+            className="absolute -left-14 top-8 w-12 text-foreground hidden md:block"
           />
           <Poem {...poems[1]} />
         </div>
@@ -127,7 +131,11 @@ const Index = () => {
 
       {/* Third poem - lavender whisper */}
       <PastelSection color="lavender" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-lg mx-auto relative">
+          <BotanicalSketch 
+            variant="fern" 
+            className="absolute -right-12 bottom-0 w-10 text-foreground hidden md:block"
+          />
           <Poem {...poems[2]} />
         </div>
       </PastelSection>
@@ -138,9 +146,9 @@ const Index = () => {
       {/* Fourth poem - sage green */}
       <PastelSection color="sage" className="px-6 md:px-8 py-16 md:py-24">
         <div className="max-w-lg mx-auto relative">
-          <DecorativeAccent 
+          <BotanicalSketch 
             variant="leaf" 
-            className="absolute -left-12 top-1/4 w-8 text-foreground hidden md:block"
+            className="absolute -left-14 top-1/4 w-14 text-foreground hidden md:block"
           />
           <Poem {...poems[3]} />
         </div>
@@ -151,9 +159,9 @@ const Index = () => {
       {/* Fifth poem - soft sky */}
       <PastelSection color="sky" className="px-6 md:px-8 py-16 md:py-24">
         <div className="max-w-lg mx-auto relative">
-          <DecorativeAccent 
-            variant="circle" 
-            className="absolute -top-4 -right-8 w-16 text-foreground hidden md:block"
+          <BotanicalSketch 
+            variant="branch" 
+            className="absolute -top-6 -right-20 w-28 text-foreground hidden md:block"
           />
           <Poem {...poems[4]} />
         </div>
@@ -163,7 +171,12 @@ const Index = () => {
 
       {/* Final poem - return to cream */}
       <PastelSection color="cream" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-lg mx-auto relative">
+          <BotanicalSketch 
+            variant="bud" 
+            className="absolute -left-10 bottom-4 w-8 text-foreground hidden md:block"
+            flip
+          />
           <Poem {...poems[5]} />
         </div>
       </PastelSection>
