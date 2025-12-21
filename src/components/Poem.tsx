@@ -43,7 +43,7 @@ const Poem = ({ title, author, lines, className = "" }: PoemProps) => {
         </header>
       )}
       
-      <div className="poetry-text text-xl md:text-2xl text-foreground/90">
+      <div className="poetry-text text-base md:text-lg text-foreground/90">
         {lines.map((line, index) => (
           <p key={index} className={`${line === "" ? "h-6" : ""}`}>
             {line || "\u00A0"}
