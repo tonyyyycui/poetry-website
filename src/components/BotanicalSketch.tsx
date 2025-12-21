@@ -9,11 +9,11 @@ const BotanicalSketch = ({
   className = "",
   flip = false
 }: BotanicalSketchProps) => {
-  const baseClasses = `opacity-[0.35] ${flip ? "scale-x-[-1]" : ""} ${className}`;
+  const baseClasses = `opacity-60 ${flip ? "scale-x-[-1]" : ""} ${className}`;
 
   if (variant === "leaf") {
     return (
-      <svg viewBox="0 0 60 100" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="0.5">
+      <svg viewBox="0 0 60 100" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="1.2">
         <path d="M30 95 Q30 50 30 10" strokeLinecap="round" />
         <path d="M30 20 Q45 30 50 50 Q45 55 30 45" strokeLinecap="round" />
         <path d="M30 35 Q15 45 10 65 Q15 70 30 60" strokeLinecap="round" />
@@ -27,7 +27,7 @@ const BotanicalSketch = ({
 
   if (variant === "branch") {
     return (
-      <svg viewBox="0 0 120 80" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="0.5">
+      <svg viewBox="0 0 120 80" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="1.2">
         <path d="M5 70 Q40 65 60 50 Q80 35 115 30" strokeLinecap="round" />
         <path d="M25 62 Q30 50 35 42" strokeLinecap="round" />
         <path d="M35 42 Q40 35 38 25" strokeLinecap="round" />
@@ -43,7 +43,7 @@ const BotanicalSketch = ({
 
   if (variant === "flower") {
     return (
-      <svg viewBox="0 0 50 70" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="0.5">
+      <svg viewBox="0 0 50 70" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="1.2">
         <path d="M25 68 Q25 45 25 30" strokeLinecap="round" />
         <path d="M25 50 Q18 48 12 52" strokeLinecap="round" />
         <path d="M25 40 Q32 38 38 42" strokeLinecap="round" />
@@ -59,7 +59,7 @@ const BotanicalSketch = ({
 
   if (variant === "fern") {
     return (
-      <svg viewBox="0 0 40 120" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="0.5">
+      <svg viewBox="0 0 40 120" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="1.2">
         <path d="M20 115 Q20 60 20 10" strokeLinecap="round" />
         <path d="M20 20 Q28 22 35 18" strokeLinecap="round" />
         <path d="M20 20 Q12 22 5 18" strokeLinecap="round" />
@@ -79,7 +79,7 @@ const BotanicalSketch = ({
 
   if (variant === "sprig") {
     return (
-      <svg viewBox="0 0 80 60" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="0.5">
+      <svg viewBox="0 0 80 60" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="1.2">
         <path d="M5 55 Q25 50 45 35 Q65 20 75 10" strokeLinecap="round" />
         <ellipse cx="18" cy="48" rx="6" ry="10" transform="rotate(-20 18 48)" />
         <ellipse cx="35" cy="38" rx="5" ry="9" transform="rotate(-30 35 38)" />
@@ -91,7 +91,7 @@ const BotanicalSketch = ({
 
   if (variant === "bud") {
     return (
-      <svg viewBox="0 0 30 50" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="0.5">
+      <svg viewBox="0 0 30 50" className={baseClasses} fill="none" stroke="currentColor" strokeWidth="1.2">
         <path d="M15 48 Q15 30 15 18" strokeLinecap="round" />
         <path d="M15 18 Q12 12 15 5 Q18 12 15 18" strokeLinecap="round" />
         <path d="M15 18 Q8 15 5 10" strokeLinecap="round" />

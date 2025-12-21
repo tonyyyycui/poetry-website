@@ -107,7 +107,7 @@ const Index = () => {
         <div className="max-w-2xl mx-auto relative">
           <BotanicalSketch 
             variant="branch" 
-            className="absolute -right-24 top-4 w-32 text-foreground hidden lg:block"
+            className="absolute right-0 top-4 w-24 text-foreground/70"
           />
           <Poem {...poems[0]} />
         </div>
@@ -120,11 +120,11 @@ const Index = () => {
         <div className="max-w-2xl mx-auto relative">
           <BotanicalSketch 
             variant="fern" 
-            className="absolute -left-16 top-12 w-14 text-foreground hidden lg:block"
+            className="absolute left-0 top-12 w-10 text-foreground/70"
           />
           <BotanicalSketch 
             variant="flower" 
-            className="absolute -right-20 bottom-1/4 w-12 text-foreground hidden lg:block"
+            className="absolute right-0 bottom-1/4 w-10 text-foreground/70"
             flip
           />
           <Poem {...poems[1]} />
@@ -138,15 +138,15 @@ const Index = () => {
         <div className="max-w-2xl mx-auto relative">
           <BotanicalSketch 
             variant="leaf" 
-            className="absolute -left-16 top-1/4 w-16 text-foreground hidden lg:block"
+            className="absolute left-0 top-1/4 w-12 text-foreground/70"
           />
           <BotanicalSketch 
             variant="sprig" 
-            className="absolute -right-20 top-1/2 w-20 text-foreground hidden lg:block"
+            className="absolute right-0 top-1/2 w-16 text-foreground/70"
           />
           <BotanicalSketch 
             variant="bud" 
-            className="absolute -left-12 bottom-20 w-10 text-foreground hidden lg:block"
+            className="absolute left-4 bottom-20 w-8 text-foreground/70"
             flip
           />
           <Poem {...poems[2]} />
