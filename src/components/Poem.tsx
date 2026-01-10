@@ -39,7 +39,7 @@ const Poem = ({ title, author, date, lines, className = "" }: PoemProps) => {
       {(title || date) && (
         <header className="mb-8">
           {title && (
-            <h2 className="poetry-title text-muted-foreground tracking-widest">
+            <h2 className="poetry-title text-lg md:text-xl text-muted-foreground tracking-widest">
               {title}
             </h2>
           )}
