@@ -4,31 +4,6 @@ import ClosingSection from "@/components/ClosingSection";
 
 const poems = [
   {
-    title: "A Soul Winter's Eve",
-    date: "December 6, 2024",
-    lines: [
-      "I choose to open my eyelids to let in the light,",
-      "and observe the wilderness that sprawls past its undertow.",
-      "Barren treetops offer a view into the shrub depths that glow",
-      "endlessly, beyond what I can envision past my sight.",
-      "",
-      "A marbled windowsill rests snug against bruised elbows,",
-      "padded by the remnants of a devastating cough.",
-      "Forehead pressed against the icy pane as the mind runs off",
-      "with an image of pines buried deep in snow.",
-      "",
-      "Darkness engulfs the scene like a colony of ants scrambling for life.",
-      "Shadows form glyphs on the popcorn textured ceiling,",
-      "morphing left and right, in and out of a stuttered gasping,",
-      "flirting existence with the sunlit edge of a glimmering knife.",
-      "",
-      "The silence of faint rustling awakens a dormant forebode of longing,",
-      "for soothing warmth curated from a fruitful season of autumn.",
-      "Eyelids close as a water lily's final petal floats to the icy earth's bottom,",
-      "laying to rest the world's lust for a new day's dawning."
-    ]
-  },
-  {
     title: "Tranquility",
     date: "October 4, 2024",
     lines: [
@@ -93,6 +68,31 @@ const poems = [
       "or maybe just tell my younger self",
       "to stare into that carpet,",
       "and don't look away."
+    ]
+  },
+  {
+    title: "A Soul Winter's Eve",
+    date: "December 6, 2024",
+    lines: [
+      "I choose to open my eyelids to let in the light,",
+      "and observe the wilderness that sprawls past its undertow.",
+      "Barren treetops offer a view into the shrub depths that glow",
+      "endlessly, beyond what I can envision past my sight.",
+      "",
+      "A marbled windowsill rests snug against bruised elbows,",
+      "padded by the remnants of a devastating cough.",
+      "Forehead pressed against the icy pane as the mind runs off",
+      "with an image of pines buried deep in snow.",
+      "",
+      "Darkness engulfs the scene like a colony of ants scrambling for life.",
+      "Shadows form glyphs on the popcorn textured ceiling,",
+      "morphing left and right, in and out of a stuttered gasping,",
+      "flirting existence with the sunlit edge of a glimmering knife.",
+      "",
+      "The silence of faint rustling awakens a dormant forebode of longing,",
+      "for soothing warmth curated from a fruitful season of autumn.",
+      "Eyelids close as a water lily's final petal floats to the icy earth's bottom,",
+      "laying to rest the world's lust for a new day's dawning."
     ]
   },
   {
