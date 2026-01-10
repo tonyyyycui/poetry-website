@@ -1,6 +1,4 @@
 import Poem from "@/components/Poem";
-import SoftDivider from "@/components/SoftDivider";
-import BotanicalSketch from "@/components/BotanicalSketch";
 import PastelSection from "@/components/PastelSection";
 import ClosingSection from "@/components/ClosingSection";
 
@@ -93,6 +91,17 @@ const poems = [
       "to stare into that carpet,",
       "and don't look away."
     ]
+  },
+  {
+    title: "Central Park",
+    lines: [
+      "Crisp is the air on a winter's day,",
+      "An unearthed treasure hidden in stealth.",
+      "Not stale, nor corrupt with stray,",
+      "Smoky hazards of cement and filth.",
+      "Dry coughs become faded prayers,",
+      "Rewritten by gulps of bountiful health."
+    ]
   }
 ];
 
@@ -104,52 +113,29 @@ const Index = () => {
       
       {/* First poem - cream background */}
       <PastelSection color="cream" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-2xl mx-auto relative">
-          <BotanicalSketch 
-            variant="branch" 
-            className="absolute right-0 top-4 w-24 text-foreground/70"
-          />
+        <div className="max-w-2xl mx-auto">
           <Poem {...poems[0]} />
         </div>
       </PastelSection>
 
-      <SoftDivider variant="accent" />
-
       {/* Second poem - subtle blush */}
       <PastelSection color="blush" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-2xl mx-auto relative">
-          <BotanicalSketch 
-            variant="fern" 
-            className="absolute left-0 top-12 w-10 text-foreground/70"
-          />
-          <BotanicalSketch 
-            variant="flower" 
-            className="absolute right-0 bottom-1/4 w-10 text-foreground/70"
-            flip
-          />
+        <div className="max-w-2xl mx-auto">
           <Poem {...poems[1]} />
         </div>
       </PastelSection>
 
-      <SoftDivider variant="dots" />
-
       {/* Third poem - lavender whisper */}
       <PastelSection color="lavender" className="px-6 md:px-8 py-16 md:py-24">
-        <div className="max-w-2xl mx-auto relative">
-          <BotanicalSketch 
-            variant="leaf" 
-            className="absolute left-0 top-1/4 w-12 text-foreground/70"
-          />
-          <BotanicalSketch 
-            variant="sprig" 
-            className="absolute right-0 top-1/2 w-16 text-foreground/70"
-          />
-          <BotanicalSketch 
-            variant="bud" 
-            className="absolute left-4 bottom-20 w-8 text-foreground/70"
-            flip
-          />
+        <div className="max-w-2xl mx-auto">
           <Poem {...poems[2]} />
+        </div>
+      </PastelSection>
+
+      {/* Fourth poem - sage */}
+      <PastelSection color="sage" className="px-6 md:px-8 py-16 md:py-24">
+        <div className="max-w-2xl mx-auto">
+          <Poem {...poems[3]} />
         </div>
       </PastelSection>
 
