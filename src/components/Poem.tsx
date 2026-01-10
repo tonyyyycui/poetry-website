@@ -3,11 +3,12 @@ import { useEffect, useRef, useState } from "react";
 interface PoemProps {
   title?: string;
   author?: string;
+  date?: string;
   lines: string[];
   className?: string;
 }
 
-const Poem = ({ title, author, lines, className = "" }: PoemProps) => {
+const Poem = ({ title, author, date, lines, className = "" }: PoemProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -35,11 +36,18 @@ const Poem = ({ title, author, lines, className = "" }: PoemProps) => {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       } ${className}`}
     >
-      {title && (
+      {(title || date) && (
         <header className="mb-8">
-          <h2 className="poetry-title text-muted-foreground tracking-widest">
-            {title}
-          </h2>
+          {title && (
+            <h2 className="poetry-title text-muted-foreground tracking-widest">
+              {title}
+            </h2>
+          )}
+          {date && (
+            <p className="text-xs text-muted-foreground/60 mt-2 tracking-wide italic">
+              {date}
+            </p>
+          )}
         </header>
       )}
       

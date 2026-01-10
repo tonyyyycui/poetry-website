@@ -5,6 +5,7 @@ import ClosingSection from "@/components/ClosingSection";
 const poems = [
   {
     title: "A Soul Winter's Eve",
+    date: "December 6, 2024",
     lines: [
       "I choose to open my eyelids to let in the light,",
       "and observe the wilderness that sprawls past its undertow.",
@@ -29,6 +30,7 @@ const poems = [
   },
   {
     title: "Tranquility",
+    date: "October 4, 2024",
     lines: [
       "A cardinal flies by the clearing I'm in,",
       "bringing me blissful joy from its chirping.",
@@ -51,6 +53,7 @@ const poems = [
   },
   {
     title: "a hint of reminiscence",
+    date: "2024",
     lines: [
       "i still remember what it was like",
       "to be in kindergarten.",
@@ -94,6 +97,7 @@ const poems = [
   },
   {
     title: "Central Park",
+    date: "December 24, 2025",
     lines: [
       "Crisp is the air on a winter's day,",
       "An unearthed treasure hidden in stealth.",
